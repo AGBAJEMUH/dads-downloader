@@ -104,32 +104,3 @@ log_level = 2
 
 # (int) Display warning if buildozer is run as root (0 = False, 1 = True)
 warn_on_root = 1
-!pip install buildozer cython==0.29.33
-!sudo apt-get install -y \
-    python3-pip \
-    build-essential \
-    git \
-    python3 \
-    python3-dev \
-    ffmpeg \
-    libsdl2-dev \
-    libsdl2-image-dev \
-    libsdl2-mixer-dev \
-    libsdl2-ttf-dev \
-    libportmidi-dev \
-    libswscale-dev \
-    libavformat-dev \
-    libavcodec-dev \
-    zlib1g-dev \
-    libgstreamer1.0 \
-    gstreamer1.0-plugins-base \
-    gstreamer1.0-plugins-good
-
-# Install Java (required for buildozer)
-!apt-get install -y openjdk-8-jdk
-!update-alternatives --set java /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
-
-!buildozer init
-# (Wait for prompt, then confirm 'y' if asked)
-
-!buildozer android debug

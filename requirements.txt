@@ -1,2 +1,2 @@
 yt-dlp
-kivy
+kivy==2.2.0
